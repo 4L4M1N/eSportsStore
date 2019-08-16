@@ -24,8 +24,11 @@ namespace SportsStore.WebUI.HtmlHelpers
                 {
                     tag.AddCssClass("selected");
                     tag.AddCssClass("btn-primary");
+                    
                 }
                 tag.AddCssClass("btn btn-default");
+                tag.GenerateId("pageLink");
+
                 result.Append(tag.ToString());
             }
             return MvcHtmlString.Create(result.ToString());
